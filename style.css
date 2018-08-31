@@ -1,0 +1,172 @@
+@charset "UTF-8";
+* {
+    position: relative;
+    font-family: 微軟正黑體;
+    vertical-align: top;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phone {
+    width: 146px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    left: 0px;
+}
+
+.top {
+    height: 40px;
+}
+
+.top .camera {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screen {
+    height: 230px;
+    transition-durtion: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.screen .pages {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0px;
+    transition-duration: 0.5s;
+    right: 0px;
+}
+
+.screen .pages .page {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    font-size: initial;
+    white-space: normal;
+    font-size: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    background-color: #333;
+    position: relative;
+    color: #fff;
+}
+
+.screen .pages .page:before {
+    content: "";
+    background-color: #FFD117;
+    height: 34px;
+    width: 100%;
+    display: block;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.screen .pages .page:after {
+    content: "";
+    background-color: #FFD117;
+    height: 17px;
+    width: 100%;
+    display: block;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.screen .pages .page h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.screen .pages .page p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.screen .pages .page1 {
+    padding: 7px;
+    box-sizing: border-box;
+    background-color: #FFE23B;
+}
+
+.screen .pages .banana {
+    width: 30px;
+    height: 30px;
+    background-color: #FFC619;
+    border-radius: 100%;
+    right: -100px;
+    background-image: url("https://static-cdn.jtvnw.net/jtv_user_pictures/panel-114237423-image-978777462e76f619-320-320.png");
+    background-size: cover;
+}
+
+.bottom {
+    height: 40px;
+}
+
+.bottom .button {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 19px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.bottom .button:hover {
+    background-color: #ccc;
+}
+
+.status,
+.phonename {
+    color: white;
+    margin: 0;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.phonename {
+    margin: 10px;
+}
+
+.buttons button {
+    padding: 5px 10px;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    color: black;
+    background-color: #fff;
+}
